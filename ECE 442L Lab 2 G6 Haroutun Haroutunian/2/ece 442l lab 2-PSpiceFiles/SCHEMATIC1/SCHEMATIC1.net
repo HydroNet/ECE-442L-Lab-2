@@ -1,0 +1,10 @@
+* source ECE 442L LAB 2
+V_V1         N01291 0  
++PULSE 5V 0V 0 .333us .333us 1.332us 3.33us
+V_V2         N01262 0 5Vdc
+M_M1         N01112 N01059 0 0 Mbreakn2           
+M_M3         N01191 N01059 N01262 N01262 Mbreakp           
+V_V3         N01059 0  
++PULSE 5V 0V 0 .666us .666us 2.664us 6.66us
+M_M4         N01191 N01291 N01262 N01262 Mbreakp           
+M_M2         N01191 N01291 N01112 0 Mbreakn2           

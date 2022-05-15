@@ -1,0 +1,148 @@
+
+**** 09/29/21 22:01:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-rampcase"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\Lab 2 Rampwave-PSpiceFiles\S
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "rampcase.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab 2 rampwave-pspicefiles/lab 2 rampwave.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Harry\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 15us 0 2us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB 2 RAMPWAVE
+M_M2         N02498 N02532 N02658 0 Mbreakn           
+M_M3         N02498 N02490 N02424 N02424 Mbreakp           
+M_M4         N02498 N02532 N02424 N02424 Mbreakp           
+V_V2         N02424 0 5Vdc
+M_M1         N02658 N02490 0 0 Mbreakn           
+V_V1         N02532 0  
++PULSE 0V 5V 0 5us 0 0 5us
+V_V3         N02490 0  
++PULSE 0v 5V 0 5us 0 0 5us
+
+**** RESUMING rampcase.cir ****
+.END
+
+**** 09/29/21 22:01:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-rampcase"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\Lab 2 Rampwave-PSpiceFiles\S
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         Mbreakp         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    2              -1            
+          KP  111.000000E-06   55.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    1.200000E-06    1.200000E-06 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V1.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V3.
+
+**** 09/29/21 22:01:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-rampcase"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\Lab 2 Rampwave-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02424)    5.0000 (N02490)    0.0000 (N02498)    5.0000 (N02532)    0.0000     
+
+(N02658)-1.843E-12 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -5.010E-12
+    V_V1         0.000E+00
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.51E-11  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+
+          JOB CONCLUDED
+
+**** 09/29/21 22:01:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-rampcase"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\Lab 2 Rampwave-PSpiceFiles\S
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       20.33
+  Total job time (using Solver 1)   =        0.00
+

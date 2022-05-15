@@ -1,0 +1,141 @@
+
+**** 09/29/21 21:29:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-case4"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\ECE 442L Lab 2 Case 4-PSpiceFil
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "case4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Harry\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 6.66us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ECE 442L LAB 2 CASE 4
+V_V2         N01764 0 5Vdc
+M_M3         N01838 N01830 N01764 N01764 Mbreakp           
+M_M2         N01838 N01872 N01998 0 Mbreakn           
+M_M4         N01838 N01872 N01764 N01764 Mbreakp           
+V_V3         N01830 0  
++PULSE 5V 0V 0 .222us .222us .888us 2.22us
+M_M1         N01998 N01830 0 0 Mbreakn           
+V_V1         N01872 0  
++PULSE 5V 0V 0 .111us .111us .444us 1.11us
+
+**** RESUMING case4.cir ****
+.END
+
+**** 09/29/21 21:29:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-case4"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\ECE 442L Lab 2 Case 4-PSpiceFil
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakp         Mbreakn         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    0               0            
+          KP   20.000000E-06   20.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 09/29/21 21:29:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-case4"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\ECE 442L Lab 2 Case 4-PSpiceFil
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01764)    5.0000 (N01830)    5.0000 (N01838) 200.4E-09 (N01872)    5.0000     
+
+(N01998) 100.2E-09 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.002E-11
+    V_V3         0.000E+00
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.01E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/29/21 21:29:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-case4"  [ C:\Users\Harry\Desktop\CSUN\Fall 2021 CSUN\ECE 442L\ECE 442L Lab 2\ECE 442L Lab 2 Case 4-PSpiceFil
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        4.08
+  Total job time (using Solver 1)   =         .08
+

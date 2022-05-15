@@ -1,0 +1,59 @@
+(ExpressProject "ECE 442L Lab 2"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (File ".\ece 442l lab 2.dsn"
+      (Type "Schematic Design"))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\ece 442l lab 2-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\ece 442l lab 2-pspicefiles\schematic1\lab2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ece 442l lab 2-pspicefiles\schematic1\lab2.sim"
+        (DisplayName "SCHEMATIC1-Lab2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\ece 442l lab 2-pspicefiles\ece 442l lab 2.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\ece 442l lab 2-pspicefiles\ece 442l lab 2.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\harry\desktop\csun\fall 2021 csun\ece 442l\ece 442l lab 2\2\ece 442l lab 2.dsn")
+      (Path "Design Resources"
+         "c:\users\harry\desktop\csun\fall 2021 csun\ece 442l\ece 442l lab 2\2\ece 442l lab 2.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 392"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 842 78 506")
+        (Scroll "0 15")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\HARRY\DESKTOP\CSUN\FALL 2021 CSUN\ECE 442L\ECE 442L LAB 2\2\ECE 442L LAB 2.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Harry"))

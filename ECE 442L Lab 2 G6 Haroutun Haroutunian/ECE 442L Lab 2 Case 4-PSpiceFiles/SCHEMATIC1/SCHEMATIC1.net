@@ -1,0 +1,10 @@
+* source ECE 442L LAB 2 CASE 4
+V_V2         N01764 0 5Vdc
+M_M3         N01838 N01830 N01764 N01764 Mbreakp           
+M_M2         N01838 N01872 N01998 0 Mbreakn           
+M_M4         N01838 N01872 N01764 N01764 Mbreakp           
+V_V3         N01830 0  
++PULSE 5V 0V 0 .222us .222us .888us 2.22us
+M_M1         N01998 N01830 0 0 Mbreakn           
+V_V1         N01872 0  
++PULSE 5V 0V 0 .111us .111us .444us 1.11us

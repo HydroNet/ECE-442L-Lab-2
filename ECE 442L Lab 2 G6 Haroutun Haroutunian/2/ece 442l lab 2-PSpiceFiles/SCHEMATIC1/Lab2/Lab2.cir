@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-Lab2"  [ c:\users\harry\desktop\csun\fall 2021 csun\ece 442l\ece 442l lab 2\2\ece 442l lab 2-pspicefiles\schematic1\lab2.sim ] 
+
+** Creating circuit file "Lab2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ece 442l lab 2-pspicefiles/ece 442l lab 2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Harry\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 19.98us 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

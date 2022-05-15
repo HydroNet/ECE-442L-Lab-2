@@ -1,0 +1,9 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+C:/Users/Harry/Desktop/CSUN/Fall 2021 CSUN/ECE 442L/ECE 442L Lab 2/1
+    ECE 442L Lab 2.opj
+    ece 442l lab 2.dsn
+C:/Users/Harry/Desktop/CSUN/Fall 2021 CSUN/ECE 442L/ECE 442L Lab 2/1/ECE 442L Lab 2-PSpiceFiles
+C:/Users/Harry/Desktop/CSUN/Fall 2021 CSUN/ECE 442L/ECE 442L Lab 2/1/ECE 442L Lab 2-PSpiceFiles/SCHEMATIC1

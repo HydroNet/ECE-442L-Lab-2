@@ -1,0 +1,10 @@
+* source LAB 2 RAMPWAVE
+M_M2         N02498 N02532 N02658 0 Mbreakn           
+M_M3         N02498 N02490 N02424 N02424 Mbreakp           
+M_M4         N02498 N02532 N02424 N02424 Mbreakp           
+V_V2         N02424 0 5Vdc
+M_M1         N02658 N02490 0 0 Mbreakn           
+V_V1         N02532 0  
++PULSE 0V 5V 0 5us 0 0 5us
+V_V3         N02490 0  
++PULSE 0v 5V 0 5us 0 0 5us
